@@ -137,28 +137,25 @@ Proposed System Architecture
 
 The system consists of four major interfaces: Farmer, Buyer, Logistics Partner and Administrator. All interfaces communicate with a central backend that connects the marketplace, AI/ML services, database and logistics module.
 
+```mermaid
 flowchart TD
     A["Farmer / FPO"] --> E["FarmLink AI Platform"]
     B["Consumer / Bulk Buyer"] --> E
     C["Logistics Partner"] --> E
     D["Administrator"] --> E
-
     E --> F["User Authentication"]
     E --> G["Marketplace Management"]
     E --> H["Order Management"]
-
     G --> I[("Database")]
     H --> I
-
     E --> J["AI / ML Engine"]
     J --> K["Demand Forecasting"]
     J --> L["Price Recommendation"]
-
     E --> M["Smart Logistics"]
     M --> N["Route Optimization"]
     M --> O["Order Grouping"]
-
     H --> P["Order Tracking"]
+```
 ## Feasibility and Viability
 Analysis of the Feasibility of the Idea
 
